@@ -9,6 +9,9 @@ body {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -22,21 +25,30 @@ p {
 
 input[type="number"] {
   padding: 8px;
-  width: 100%;
+  width: 50%;
+  margin: 10px auto;
   border: 1px solid #ccc;
+  float: left;
 }
 
 button {
   display: block;
-  margin-top: 10px;
   padding: 8px 16px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   cursor: pointer;
+  float: left;
 }
 
 #result {
   margin-top: 20px;
+  min-height: 20px;
   font-weight: bold;
+  clear: both;
+  margin-top: 20px;
+}
+
+#resetButton {
+  background-color: #ff5722;
 }
